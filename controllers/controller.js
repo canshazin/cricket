@@ -1,4 +1,5 @@
 const Player = require("../models/player.js");
+const path = require("path");
 // const Review = require("../models/review.js");
 
 // exports.getData = (req, res, next) => {
@@ -201,6 +202,10 @@ exports.deleteData = async (req, res, next) => {
   } catch (err) {
     console.log(err);
   }
+};
+
+exports.serveHomePage = (req, res, next) => {
+  res.sendFile(path.join(__dirname, "../public", "index.html"));
 };
 
 exports.pageNotFound = (req, res, next) => {

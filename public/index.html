@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=< device-width >, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+
+  <body>
+    <div id="div1">
+      <label>Player Information</label>
+      <form id="form1">
+        <label for="fname">Name :</label>
+        <br />
+        <input type="text" name="fname" id="fname" required />
+        <br />
+
+        <label for="dob">DOB:</label>
+        <br />
+        <input type="date" name="dob" id="dob" required\ />
+        <br />
+
+        <label for="photo">Photo Url:</label>
+        <br />
+        <input type="text" name="photo" id="photo" required />
+        <br />
+
+        <label for="birthplace">Birth Place:</label>
+        <br />
+        <input type="text" name="birthplace" id="birthplace" required />
+        <br />
+
+        <label for="career">Career :</label>
+        <br />
+        <textarea id="career" required></textarea>
+        <br />
+
+        <label for="nom">No of Matches :</label>
+        <br />
+        <input type="number" name="nom" id="nom" required />
+        <br />
+
+        <label for="score">Score :</label>
+        <br />
+        <input type="number" name="score" id="score" required />
+        <br />
+
+        <label for="fifties">Fifties :</label>
+        <br />
+        <input type="number" name="fifties" id="fifties" required />
+        <br />
+
+        <label for="centuries">Centuries :</label>
+        <br />
+        <input type="number" name="centuries" id="centuries" required />
+        <br />
+
+        <label for="wickets">Wickets :</label>
+        <br />
+        <input type="number" name="wickets" id="wickets" required />
+        <br />
+
+        <label for="avg">Avg : </label>
+        <br />
+        <input type="number" name="avg" id="avg" required />
+        <br />
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <div id="div2">
+      <form id="form2">
+        <label for="fname2">Player Name: </label>
+        <input type="text" id="fname2" />
+        <button type="submit">Submit</button>
+        <ul></ul>
+        <div id="div3"></div>
+      </form>
+    </div>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.1/axios.min.js"></script>
+  <script src="./script.js"></script>
+</html>
